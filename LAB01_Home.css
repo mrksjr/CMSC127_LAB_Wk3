@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-image: url("faction_banners.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center top;
+}
+
+#admin_area {
+	position: fixed;
+	padding: 10px 15px;
+	background-color: maroon;
+	
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	
+	right: 0;
+	top: 0;
+}
+
+#admin_area:hover {
+	cursor: pointer;
+	background-color: white;
+	color: maroon;
+}
+
+#form_popup {
+	display: none;
+	position: fixed;
+	z-index: 9;
+	
+	border: none;
+	text-align: left;
+	color:white;
+	
+	max-width: 200px;
+	padding: 10px;
+	background-color: maroon;
+	
+	top: 0;
+	right: 0;
+}
+
+#form_popup input[type="text"], #form_popup input[type="password"] {
+	width: 100%;
+	margin: 5px auto;
+}
+
+#login {
+	background-color: #6ED172;
+	color: white;
+	border: none;
+	
+	padding: 5px 0;
+	width: 100%;
+	margin-top: 5px;
+}
+
+#login:hover {
+	cursor: pointer;
+	background-color: #5DC061;
+}
+
+#cancel {
+	background-color: #D1726E;
+	color: white;
+	border: none;
+	
+	padding: 5px 0;
+	width: 100%;
+}
+
+#cancel:hover {
+	cursor: pointer;
+	background-color: #C0615D;
+}
+
+#login:focus, #cancel:focus {
+	outline: none;
+}
+
+#header_area {
+	background-color: rgba( 255, 255, 255, 0.6 );
+	width: 1000px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#header_area img {
+	height: 150px;
+	margin: 15px 0;
+}
+
+#grid {
+	display: grid;
+	width: 800px;
+	height: 350px;
+	margin: 30px auto;
+	
+	border-top: 4px solid #FFDF00;
+	border-right: 4px solid #D4AF37;
+	border-bottom: 4px solid #D4AF37;
+	border-left: 4px solid #FFDF00;
+	
+	grid-template-columns: 55% 45%;
+	grid-template-rows: 50% 50%;
+}
+
+#grid_main {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	
+	padding: 15px;
+	text-align: justify;
+	
+	color: white;
+	background-color: rgba( 128, 0, 0, 0.9 );
+}
+
+#grid_main p {
+	font-family: times-new-roman;
+	font-size: 18px;
+	width: 70%;
+	margin: 20px auto;
+}
+
+
+#grid_apply {
+	padding: 15px;
+	
+	color: white;
+	background-color: rgba( 50, 50, 200, 0.9 );
+	
+	text-align: center;
+}
+
+#apply_img {
+	height: 60px;
+	margin: 10px;
+	
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+
+#grid_job {
+	padding: 12px;
+	
+	color: white;
+	background-color: rgba( 0, 128, 0, 0.9 );
+}
+
+#grid_job a {
+	line-height: 22px;
+	color: white;
+}
+
+/*   UNUNSED     
+
+a{
+	text-decoration: none;
+}
+
+a:link {
+	color: brown;
+	text-decoration: none;
+}
+
+a:visited {
+	color: orange;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+a:active {
+	color: brown;
+	text-decoration: none;
+}
+
+b{
+	font-family: serif;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+p{
+	font-family: serif;
+	margin: 0;
+	padding: 0;
+}
+
+footer{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+
+.header_area{
+	background-color: white;
+	opacity: 90%;
+	text-transform: uppercase;
+	position: fixed;
+	top: 125px;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 40px;
+	color: brown;
+}
+
+.application_area{
+	position: fixed;
+	bottom: 40px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: brown;
+}
+
+.footer_area{
+	width: 100%;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: brown;
+	text-align: center;
+	text-decoration: none;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+	width: 100%;
+	padding: 5px;
+	margin:2px;
+	border: none;
+	background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.form-container .btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 2px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.form-container .cancel {
+	background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+	opacity: 1;
+}
+
+*/
