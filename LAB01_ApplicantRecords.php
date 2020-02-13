@@ -43,7 +43,12 @@
 						<tr>
 							<td width = "85%">
 								<form method = "POST" action = "LAB01_ApplicantInfoPage.php">
-									<?php echo "<input type = 'submit' name = 'applicname' value = '".$i.'. '.$row['lname'].', '.$row['fname'].' '.$row['mname'][0].'. '.$row['nmext']."'>" ?>
+									<?php
+										if ( !empty($row['mname']) )
+											echo "<input type = 'submit' name = 'applicname' value = '".$i.'. '.$row['lname'].', '.$row['fname'].' '.$row['mname'][0].'. '.$row['nmext']."'>";
+										else
+											echo "<input type = 'submit' name = 'applicname' value = '".$i.'. '.$row['lname'].', '.$row['fname'].' '.$row['nmext']."'>";
+									?>
 									<?php echo "<input name = 'csid' type = 'hidden' value = '".$row['csid']."'></input>" ?>
 								</form>
 							</td>
